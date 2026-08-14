@@ -64,9 +64,10 @@ public class DocumentoDaoImpl extends Dao implements DocumentoDao {
             Text lugar_fecha = new Text (request.getSede() + ", " + fechaActual.format(formato));
             Text tesis_titulo = new Text("''" + request.getTesis_titulo().toUpperCase() + "''");
             Text parrafo = new Text (
-                    "Por medio de la presente, la Dirección General de Investigación y Responsabilidad Social deja en constancia que el Bachiller " +
-                            request.getTesista_1().toUpperCase() +
-                            ", ha recibido asesoría gratuita para el desarrollo de la tesis denominada: "
+                    "Por medio de la presente, la Dirección General de Investigación y Responsabilidad Social deja en constancia que " +
+                    (request.getTesista_2().length() == 0 ? "el(la) Bachiller " : "los(las) Bachilleres ") +
+                    (request.getTesista_2().length() == 0 ? request.getTesista_1().toUpperCase() + ", ha " : request.getTesista_1().toUpperCase() + " y " + request.getTesista_2().toUpperCase() + ", han ")  +
+                    "recibido asesoría gratuita para el desarrollo de la tesis denominada: "
             );
             Text parrafo_2 = new Text ("Atentamente,");
 
