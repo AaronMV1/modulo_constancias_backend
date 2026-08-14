@@ -6,29 +6,49 @@ package pe.edu.upsjb.constancias.dto;
 public class ConstanciaGratuidadRequest {
 
 
-    private String tesista_1;
-    private String tesista_2;
+    private String tesista1;
+    private String tesista1Genero;
+    private String tesista2;
+    private String tesista2Genero;
     private String sede;
-    private String escuela_profesional;
-    private String tesis_titulo;
-    private String tesis_correlativo;
+    private String escuelaProfesional;
+    private String tesisTitulo;
+    private String tesisCorrelativo;
     private String usuario;
+    private Float firmaAncho;
+    private Float firmaAlto;
 
 
-    public String getTesista_1() {
-        return tesista_1;
+    public String getTesista1() {
+        return tesista1;
     }
 
-    public void setTesista_1(String tesista_1) {
-        this.tesista_1 = tesista_1;
+    public void setTesista1(String tesista1) {
+        this.tesista1 = tesista1;
     }
 
-    public String getTesista_2() {
-        return tesista_2;
+    public String getTesista1Genero() {
+        return tesista1Genero;
     }
 
-    public void setTesista_2(String tesista_2) {
-        this.tesista_2 = tesista_2;
+    public void setTesista1Genero(String tesista1Genero) {
+        this.tesista1Genero = tesista1Genero;
+    }
+
+    public String getTesista2() {
+        return tesista2;
+    }
+
+    public void setTesista2(String tesista2) {
+        this.tesista2 = tesista2;
+    }
+
+    public String getTesista2Genero() {
+        return tesista2Genero;
+    }
+
+    public void setTesista2Genero(String tesista2Genero) {
+        this.tesista2Genero = tesista2Genero;
     }
 
     public String getSede() {
@@ -39,28 +59,26 @@ public class ConstanciaGratuidadRequest {
         this.sede = sede;
     }
 
-    public String getEscuela_profesional() {
-        return escuela_profesional;
+    public String getEscuelaProfesional() {
+        return escuelaProfesional;
     }
 
-    public void setEscuela_profesional(String escuela_profesional) {
-        this.escuela_profesional = escuela_profesional;
+    public void setEscuelaProfesional(String escuelaProfesional) {
+        this.escuelaProfesional = escuelaProfesional;
     }
 
-    public String getTesis_titulo() {
-        return tesis_titulo;
+    public String getTesisTitulo() {
+        return tesisTitulo;
     }
 
-    public void setTesis_titulo(String tesis_titulo) {
-        this.tesis_titulo = tesis_titulo;
+    public void setTesisTitulo(String tesisTitulo) { this.tesisTitulo = tesisTitulo;}
+
+    public String getTesisCorrelativo() {
+        return tesisCorrelativo;
     }
 
-    public String getTesis_correlativo() {
-        return tesis_correlativo;
-    }
-
-    public void setTesis_correlativo(String tesis_correlativo) {
-        this.tesis_correlativo = tesis_correlativo;
+    public void setTesisCorrelativo(String tesisCorrelativo) {
+        this.tesisCorrelativo = tesisCorrelativo;
     }
 
     public String getUsuario() {
@@ -69,6 +87,22 @@ public class ConstanciaGratuidadRequest {
 
     public void setUsuario(String usuario) {
         this.usuario = usuario;
+    }
+
+    public Float getFirmaAncho() {
+        return firmaAncho;
+    }
+
+    public void setFirmaAncho(Float firmaAncho) {
+        this.firmaAncho = firmaAncho;
+    }
+
+    public Float getFirmaAlto() {
+        return firmaAlto;
+    }
+
+    public void setFirmaAlto(Float firmaAlto) {
+        this.firmaAlto = firmaAlto;
     }
 
 

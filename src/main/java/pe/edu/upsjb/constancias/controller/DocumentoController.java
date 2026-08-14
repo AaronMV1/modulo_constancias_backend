@@ -30,7 +30,7 @@ public class DocumentoController {
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_PDF);
-        headers.setContentDisposition(ContentDisposition.inline().filename("constancia-gratuidad.pdf").build());
+        headers.setContentDisposition(ContentDisposition.attachment().filename("constancia-gratuidad.pdf").build());
 
         return ResponseEntity.ok().headers(headers).body(pdf);
 
