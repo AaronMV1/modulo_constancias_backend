@@ -32,6 +32,7 @@ import java.util.Locale;
 
 public class DocumentoDaoImpl extends Dao implements DocumentoDao {
 
+
     private static final float FIRMA_ANCHO_POR_DEFECTO = 180f;
     private static final float FIRMA_ALTO_POR_DEFECTO = 70f;
 
@@ -39,6 +40,7 @@ public class DocumentoDaoImpl extends Dao implements DocumentoDao {
     @Override
     public byte[] enviarConstanciaGratuidad(ConstanciaGratuidadRequest request) {
 
+        
         try (ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
 
             PdfWriter writer = new PdfWriter(outputStream);
