@@ -52,13 +52,12 @@ public class DocumentoDaoImpl extends Dao implements DocumentoDao {
             agregarPlantillaSiExiste(document, pdf);
 
 
-            LocalDate fechaActual = LocalDate.now();
+            LocalDate fechaActual = LocalDate.parse(request.getFechaEmision());
 
             DateTimeFormatter formato = DateTimeFormatter.ofPattern(
                     "d 'de' MMMM 'del' yyyy",
                     new Locale("es", "PE")
             );
-
 
             PdfFont fuenteNegrita = PdfFontFactory.createFont(StandardFonts.HELVETICA_BOLD);
 

@@ -14,6 +14,7 @@ public class ConstanciaGratuidadRequest {
     private String escuelaProfesional;
     private String tesisTitulo;
     private String tesisCorrelativo;
+    private String fechaEmision;
     private String usuario;
     private Float firmaAncho;
     private Float firmaAlto;
@@ -80,6 +81,10 @@ public class ConstanciaGratuidadRequest {
     public void setTesisCorrelativo(String tesisCorrelativo) {
         this.tesisCorrelativo = tesisCorrelativo;
     }
+
+    public String getFechaEmision() { return fechaEmision; }
+
+    public void setFechaEmision(String fechaEmision) { this.fechaEmision = fechaEmision; }
 
     public String getUsuario() {
         return usuario;
